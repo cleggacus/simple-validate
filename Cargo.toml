@@ -5,14 +5,9 @@ edition = "2021"
 authors = ["cleggacus cleggacus@gmail.com"]
 license = "MIT"
 description = "Easy to use validator for rust"
-
 readme = "README.md"
-homepage = "https://github.com/you/grrs"
-repository = "https://github.com/you/grrs"
-keywords = ["cli", "search", "demo"]
-categories = ["command-line-utilities"]
-
-
+homepage = "https://github.com/cleggacus/simple-validate"
+repository = "https://github.com/cleggacus/simple-validate"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
