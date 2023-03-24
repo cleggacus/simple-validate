@@ -53,7 +53,6 @@ mod string_tests {
 
     let result_err_1 = validator.parse("test@examplecouk");
     let result_err_2 = validator.parse("testexample.co.uk");
-    let result_err_3 = validator.parse("test@example.co.u@k");
     let result_ok = validator.parse("test@example.co.uk");
 
     assert!(result_err_1.is_err(), "email err");
