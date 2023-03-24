@@ -67,7 +67,18 @@ mod string_tests {
     let result_err = validator.parse("world");
     let result_ok = validator.parse("hello world");
 
-    assert!(result_err.is_err(), "email err");
-    assert!(result_ok.is_ok(), "email ok");
+    assert!(result_err.is_err(), "starts_with err");
+    assert!(result_ok.is_ok(), "starts_with ok");
+  }
+
+  #[test]
+  fn ends_with() {
+    let validator = Validate::string().ends_with("world");
+
+    let result_err = validator.parse("hello");
+    let result_ok = validator.parse("hello world");
+
+    assert!(result_err.is_err(), "ends_with err");
+    assert!(result_ok.is_ok(), "ends_with ok");
   }
 }
