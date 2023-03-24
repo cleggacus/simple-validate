@@ -3,6 +3,7 @@ mod min_length;
 mod length;
 mod regex;
 mod email;
+mod starts_with;
 
 pub trait Validator<'a> {
   fn parse(&self, value: &'a str) -> Result<&'a str, String>;

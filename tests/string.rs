@@ -59,4 +59,15 @@ mod string_tests {
     assert!(result_err_2.is_err(), "email err");
     assert!(result_ok.is_ok(), "email ok");
   }
+
+  #[test]
+  fn starts_with() {
+    let validator = Validate::string().starts_with("hello");
+
+    let result_err = validator.parse("world");
+    let result_ok = validator.parse("hello world");
+
+    assert!(result_err.is_err(), "email err");
+    assert!(result_ok.is_ok(), "email ok");
+  }
 }
