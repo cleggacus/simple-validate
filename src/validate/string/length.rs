@@ -17,7 +17,7 @@ impl<'a> LengthValidator<'a> {
 
 impl<'a> Validator<'a> for LengthValidator<'a> {
   fn parse(&self, value: &'a str) -> Result<&'a str, String> {
-    if value.len() > self.length {
+    if value.len() != self.length {
       Err(
         match self.message {
           Some(val) => val.into(),
