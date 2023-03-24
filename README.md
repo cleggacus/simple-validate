@@ -25,8 +25,6 @@
   </a>
 </p>
 
-<br/>
-
 ## Getting Started
 
 This crate is early in development and mainly a proof of concept but if you wish to try it out you can add the following line to your `Cargo.toml` file
