@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod string_tests {
-  use validator::validate::Validate;
+  use simple_validate::validate::Validate;
 
   #[test]
   fn min() {

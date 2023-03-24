@@ -1,4 +1,4 @@
-use validator::validate::Validate;
+use simple_validate::validate::Validate;
 
 fn main() {
   let password_validator = Validate::string()
