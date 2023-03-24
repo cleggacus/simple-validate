@@ -20,8 +20,8 @@ fn main() {
   let email_validator = Validate::string().email();
 
   let email = "domain@example.com";
-  let password = "Pa$$word123";
+  let password = "pass";
 
-  println!("{:#?}", email_validator.parse(email));
+  println!("{:?}", email_validator.parse(email));
   println!("{:#?}", password_validator.parse(password));
 }
