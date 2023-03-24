@@ -5,6 +5,7 @@ mod regex;
 mod email;
 mod starts_with;
 mod ends_with;
+mod includes;
 
 pub trait Validator<'a> {
   fn parse(&self, value: &'a str) -> Result<&'a str, String>;

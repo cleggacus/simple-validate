@@ -81,4 +81,15 @@ mod string_tests {
     assert!(result_err.is_err(), "ends_with err");
     assert!(result_ok.is_ok(), "ends_with ok");
   }
+
+  #[test]
+  fn includes() {
+    let validator = Validate::string().includes("there");
+
+    let result_err = validator.parse("hello world");
+    let result_ok = validator.parse("hello there world");
+
+    assert!(result_err.is_err(), "includes_with err");
+    assert!(result_ok.is_ok(), "includes_with ok");
+  }
 }

@@ -23,7 +23,7 @@ impl<'a> Validator<'a> for EndsWith<'a> {
       Err(
         match self.message {
           Some(val) => val.into(),
-          None => format!("string must start with {}", self.ends_with)
+          None => format!("string must end with {}", self.ends_with)
         }
       )
     }
